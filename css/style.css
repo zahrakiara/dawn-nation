@@ -1,5 +1,3 @@
-/* HI THIS IS A SAMPLE COMMENT */
-
 * {
   margin: 0px;
   padding: 0px;
@@ -20,7 +18,7 @@ body {
 
 .greyText h1 {
   font-family: "Montserrat";
-  font-weight: bolder;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -31,7 +29,7 @@ body {
 }
 
 .greyText p {
-  font-family: Work Sans;
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: normal;
 }
@@ -75,11 +73,10 @@ nav ul {
 
 nav ul li {
   top: 102px;
-
   display: inline-block;
   padding: 30px;
-  margin-left: 26px;
-  margin-right: 26px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
@@ -102,11 +99,11 @@ nav ul li a:hover {
   color: black;
   font-size: 18px;
   line-height: 28px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-left: 27.5px;
-  margin-right: 0px;
+  margin-right: 0 auto;
 }
 
 #donate-button a {
@@ -120,42 +117,253 @@ nav ul li a:hover {
 .slideshow {
   z-index: 1;
   width: 100%;
-  top: 0px;
-  /*placeholder*/
-  background-image: url("./src/images/image1.png");
   height: 650px;
   align-items: center;
-  display: flex;
   justify-content: center;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  top: 0px;
 }
 
 .slideshow h1 {
-  text-align: center;
+  font-size: 54px;
   font-family: "Montserrat";
+  font-weight: bolder;
   color: white;
 }
 
-.whereTo {
+.slideshow p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: white;
+}
+
+.slideshow h3 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  color: white;
+}
+
+/* placeholder of slides */
+.mySlides {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  display: inline-block; /* Make the width of box same as image */
+}
+
+.slideshow img {
+  position: relative;
+  width: initial;
+  vertical-align: middle;
+}
+
+.sliderText {
   position: absolute;
+  text-align: center;
+  z-index: 998;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+
+  top: 35%; /* Adjust this value to move the positioned div up and down */
+  width: 70%; /* Set the width of the positioned div */
+}
+
+.callToAction {
+  position: absolute;
+  text-align: center;
+  z-index: 998;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  top: 67%; /* Adjust this value to move the positioned div up and down */
+  width: 100%; /* Set the width of the positioned div */
+}
+
+.callToAction li {
+  position: absolute;
+  padding: 30px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#learn-more {
+  border: 2px solid #fe9c00;
+  color: black;
+  border-radius: 5px;
+  justify-content: center;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  line-height: 26px;
+  margin-left: 29.5%;
+  margin-right: 0%;
+  width: 15%;
+}
+
+#learn-more a {
+  color: #fe9c00;
+}
+
+#learn-more:hover {
+  color: white;
+  background-color: #ffce7e;
+}
+
+#call {
+  background-color: #fe9c00;
+  color: black;
+  border-radius: 5px;
+  justify-content: center;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  line-height: 28px;
+  margin-left: 50%;
+  width: 15%;
+}
+
+#call a {
+  color: black;
+}
+
+#call:hover {
+  background-color: #ffce7e;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  position: absolute;
+  text-align: center;
+  z-index: 998;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: -22px;
+  top: 20%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  z-index: 996;
+  top: 50%;
+  height: 4px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #c4c4c4;
+  border-radius: 3px 3px 3px 3px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.progress {
+  position: absolute;
+  text-align: center;
+  z-index: 996;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: -22px;
+  height: cover;
+  top: 45%; /* Adjust this value to move the positioned div up and down */
+}
+
+.active,
+.dot:hover {
+  background-color: #fe9c00;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* next section */
+
+.whereTo {
+  z-index: 1;
   background-color: white;
   width: 80%;
-  height: auto;
-
-  justify-content: center;
+  height: 800px;
   align-items: center;
+  justify-content: center;
+  min-height: 750px;
+  overflow: hidden;
+  display: flex;
   padding-bottom: 0px;
   padding-right: 10%;
   padding-left: 10%;
 }
 
 .whereTo .text {
-  position: relative;
+  float: right;
   width: 40%;
   height: 685px;
   display: inline-block;
   align-items: center;
   padding: 150px, 100px;
-  float: right;
   justify-content: right;
 }
 
@@ -165,7 +373,6 @@ nav ul li a:hover {
   margin-top: 0;
   width: 60%;
   display: inline-block;
-  float: left;
 }
 
 .whereToImage img {
@@ -215,3 +422,196 @@ nav ul li a:hover {
   width: 40%;
   align-items: right;
 }
+
+/* next section */
+
+.howtohelp {
+  display: block;
+  height: 550px;
+  background-color: #4d4d4d;
+  width: 80%;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.howtohelptext {
+  text-align: padding-left;
+}
+
+.whitefont {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.whitefont h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 54px;
+}
+
+.whitefont h2 {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
+}
+
+.whitefont p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.hline {
+  position: relative;
+  top: 185%;
+  cursor: pointer;
+  z-index: 996;
+  height: 4px;
+  width: 40px;
+  margin: 0 2px;
+  border-radius: 3px 3px 3px 3px;
+  display: inline-block;
+  background-color: #fe9c00;
+}
+
+.row {
+  display: flex;
+  padding-left: 50px;
+  max-height: 270px;
+  max-block-size: 270px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 35px;
+  border: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* next section */
+
+.headersection {
+  float: inline-start;
+  columns: #4d4d4d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.headersection h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 54px;
+}
+
+.headersection h2 {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
+}
+
+.headersection p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.rowcard {
+  display: block;
+  height: 800px;
+  background-color: #e5e5e5;
+  width: 80%;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* Float four columns side by side */
+.columncard {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.rowcard {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.rowcard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background-color: #fe9c00;
+}
+
+/* #copyright { 
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+#textfoot { 
+  color:white;
+  background-color:#FE9C00;
+position:absolute;
+text-align:center;
+font-size:Symbol(figma.mixed)px;
+letter-spacing:0;
+} */

@@ -1,55 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dawn Nation</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!--nav bar with logo-->
-    <div class="nav-container">
-        <div class="logo">
-            <a href="landing-page.html"><img src="src/images/logo.png" alt="DawnNationLogo"/></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">ORGS</a></li>
-                <li id="donate-button"><a href="">DONATE</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!--slideshow placeholder-->
-    <div class="slideshow">
-        <h1 class="greyText">SLIDESHOW PLACEHOLDER</h1>
-    </div>
-
-    <!--where to donate-->
-    <div class="whereTo">
-        <div class="whereToImage">
-            <img src="src/images/BoxMan1.png" alt="Man with a box">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dawn Nation</title>
+        <link rel="shortcut icon" type="image/jpg" href="src/images/favicon.png"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--nav bar with logo-->
+        <div class="nav-container">
+            <div class="logo">
+                <a href="landing-page.html"><img src="src/images/logo.png" alt="DawnNationLogo"/></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">ORGS</a></li>
+                    <li id="donate-button"><a href="">DONATE</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <div class="text">
-            <div class="greyText">
-                <h1><strong>WHERE DO I DONATE?</strong></h1>
-                <h2>We're glad you asked!</h2>
-                <p>Dawn Nation exists to connect you with different donations drives all across the country!</p>
+        <!--slideshow placeholder-->
+        <div class="slideshow">
+            <!-- slide1 -->
+            <div class="mySlides fade">
+                <div class="sliderText">
+                    <h1 class="greyText">HELPING HANDS FOR</br>YOUR HELPING HANDS</h1>
+                    <p class="grayText">Partner with us.</br>Dawn Nation is here to help.</p>
+                </div>
+                <div class="callToAction">
+                    <ul class="callToAction">
+                        <li id="learn-more"><a href="">LEARN MORE</a></li>
+                        <li id="call"><a href="">DONATE</a></li>
+                    </ul>
+                </div>
+                <img src="src/images/slide1.png" style= "height: 100%;">
+            </div>
+            <!-- slide2 -->
+            <div class="mySlides fade" id="s1">
+                <div class="sliderText">
+                    <h1 class="greyText">COMMUNITY</br>PARTNERSHIP PROGRAM</h1>
+                    <p class="grayText">If you are leading or a part of an organization,</br>help us reach more people!</p>
+                </div>
+                <div class="callToAction">
+                    <ul class="callToAction">
+                        <li id="learn-more"><a href="">LEARN MORE</a></li>
+                        <li id="call"><a href="">JOIN US</a></li>
+                    </ul>
+                </div>
+                <img src="src/images/slide2.png" >
+            </div>
+            <!-- slide3 -->
+            <div class="mySlides fade" id="s1">
+                <div class="sliderText">
+                    <h1 class="greyText">BE PART OF THE</br>DAWN NATION TEAM</h1>
+                    <p class="grayText">This platform could sure use your help!</br>Contact us for more information.</p>
+                </div>
+                <div class="callToAction">
+                    <ul class="callToAction">
+                        <li id="learn-more"><a href="">LEARN MORE</a></li>
+                        <li id="call"><a href="">JOIN US</a></li>
+                    </ul>
+                </div>
+                <img src="src/images/slide3.png" style="height: auto;">
+            </div>
+            <!-- slide4 -->
+            <div class="mySlides fade" id="s1">
+                <div class="sliderText">
+                    <h1 class="greyText">SUPPORT THE</br>DAWN NATION TEAM</h1>
+                    <p class="grayText">We are a non-profit running on</br>support from people like you!</p>
+                </div>
+                <div class="callToAction">
+                    <ul class="callToAction">
+                        <li id="learn-more"><a href="">LEARN MORE</a></li>
+                        <li id="call"><a href="">DONATE</a></li>
+                    </ul>
+                </div>
+                <img src="src/images/slide4.png" style="height: auto;">
             </div>
 
-            <div class="learnMoreBox" >
-                <a href="">
-                    <p>LEARN MORE</p>
-                </a>
+            <!-- The dots/circles -->
+            <div class="progress" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!--where to donate-->
+        <div class="whereTo">
+            <div class="whereToImage">
+                <img src="src/images/BoxMan1.png" alt="Man with a box">
+            </div>
+
+            <div class="text">
+                <div class="greyText">
+                    <h1><strong>WHERE DO I DONATE?</strong></h1>
+                    <h2>We're glad you asked!</h2>
+                    <p>Dawn Nation exists to connect you with different donations drives all across the country!</p>
+                </div>
+
+                <div class="learnMoreBox" >
+                    <a href="">
+                        <p>LEARN MORE</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    
-</body>
+        <!--How Do I Help?-->
+        <div class="howtohelp">
+            <div class="whitefont">
+                <span class="hline"></span>
+                <h1 class="whitefont"><strong>HOW</br>CAN I</br>HELP?</strong></h1>
+                <p class="whitefont">Here are the</br>things that you</br>can donate!</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="src/images/circle_alcohol.png" style="width: 100%;">
+                    <p class="whitefont">Alcohol</p>
+                </div>
+                <div class="column">
+                    <img src="src/images/circle_mask.png" style="width: 100%;"> 
+                    <p class="whitefont">Masks</p> 
+                </div>
+                <div class="column">
+                    <img src="src/images/circle_money.png" style="width: 100%;">
+                    <p class="whitefont">Cash</p> 
+                </div>
+                <div class="column">
+                    <img src="src/images/circle_gloves.png" style="width: 100%;">
+                    <p class="whitefont">PPEs</p> 
+                </div>
+                <div class="column">
+                    <img src="src/images/circle_shield.png" style="width: 100%;">
+                    <p class="whitefont">Face Shield</p> 
+                </div>
+            </div>
+        </div>
+
+        <!--Partner Organiztions-->
+        
+        <div class="rowcard">
+            <div class="headersection">
+                <h1 class="headersection">Partner Organizations</br></h1>
+                <p class="headersection">We’ve partnered with nationwide organizations to fast track your donation!</p>
+            </div>
+            <div class="columncard">
+                <div class="card">
+                    <img src="src/images/handshake.png" style="width: 100%;">
+                    <h1>Government Institutions</h1>
+                    </br>
+                    <a href="">
+                        <p>Learn More ></p>
+                    </a>
+                </div>
+            </div>
+            <div class="columncard">
+                <div class="card">
+                    <img src="src/images/office.png" style="width: 100%;">
+                    <h1>Private Organizations</h1>
+                    </br>
+                    <a href="">
+                        <p>Learn More ></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Testimonials-->
+        
+        <div class="testimonials">
+            <div class="headersection">
+                <h1 class="headersection">Testimonials</br></h1>
+                <p class="headersection">from Dawn Nation’s satisfied customers</p>
+            </div>
+            <div class="cards"></div>
+        </div>
+        <!--Copyright Information-->
+        <footer>
+            <div id="copyright">
+                <span id="textfoot"><p>&copy; Dawn Nation 2020. All Rights Reserved.</br>
+                    Dawn Nation is a non-profit crowdsourcing web platform to fast track your donation initiatives.</p></span>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body> 
 </html>
