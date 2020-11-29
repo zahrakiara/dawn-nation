@@ -1,217 +1,217 @@
-*{
-    margin:0px;
-    padding: 0px;
-    text-decoration: none;
+/* HI THIS IS A SAMPLE COMMENT */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
-body{
-    /* remove background-color later*/
-    margin:0px;
-    align-items: center;
-    background: gray;
-    box-sizing: border-box;
+body {
+  /* remove background-color later*/
+  margin: 0px;
+  align-items: center;
+  background: gray;
+  box-sizing: border-box;
 }
 
-.greyText{
-    color:#4F4F4F;
-
+.greyText {
+  color: #4f4f4f;
 }
 
-.greyText h1{
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    font-style: normal;
+.greyText h1 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-style: normal;
 }
 
-.greyText h2{
-    font-family: 'Work Sans';
-    font-weight: 600;
-    font-style: normal;
+.greyText h2 {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
 }
 
-.greyText p{
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
+.greyText p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.nav-container{
-    width: 100%;
-    height: 140px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+.nav-container {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
-nav{
-    float:right;
-    align-items: right;
-    color: white;
+nav {
+  float: right;
+  align-items: right;
+  color: white;
 }
 
-.nav-container .logo{
-    width: 40%
+.nav-container .logo {
+  width: 40%;
 }
-.nav-container .logo img{
-    float:left;
-    height: 120px;
-    margin-left: 27.5px;
+.nav-container .logo img {
+  float: left;
+  height: 120px;
+  margin-left: 27.5px;
 
-    /* rotates the image*/
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-
-nav ul{
-    display: inline;
-    float: right;
+  /* rotates the image*/
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-nav ul li{
-    top: 102px;
-
-    display: inline-block;
-    padding:30px;
-    margin-left: 26px;
-    margin-right: 26px;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 38px;
-    text-align: right;
-    text-decoration: none;  
+nav ul {
+  display: inline;
+  float: right;
 }
 
-nav ul li a{
-    color: white
+nav ul li {
+  top: 102px;
+
+  display: inline-block;
+  padding: 30px;
+  margin-left: 26px;
+  margin-right: 26px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: right;
+  text-decoration: none;
 }
 
-nav ul li a:hover{
-    color:orange;
+nav ul li a {
+  color: white;
 }
 
-#donate-button{
-    background-color: #FE9C00;
-    color: black;
-    font-size: 18px;
-    line-height: 28px;
-    border-radius: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-left: 27.5px;
-    margin-right: 0px;
+nav ul li a:hover {
+  color: orange;
 }
 
-#donate-button a{
-    color: black;
+#donate-button {
+  background-color: #fe9c00;
+  color: black;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 27.5px;
+  margin-right: 0px;
 }
 
-#donate-button:hover{
-    background-color:#ffce7e;
+#donate-button a {
+  color: black;
 }
 
-.slideshow{
-    z-index: 1;
-    width: 100%;
-    top: 0px;
-    /*placeholder*/
-    background-image: url('./src/images/image1.png');
-    height: 650px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+#donate-button:hover {
+  background-color: #ffce7e;
 }
 
-.slideshow h1{
-    text-align: center;
-    font-family: 'Montserrat';
-    color: white;
+.slideshow {
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  /*placeholder*/
+  background-image: url("./src/images/image1.png");
+  height: 650px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.whereTo{
-    position: absolute;
-    background-color: white;
-    width: 80%;
-    height: auto;
-
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px;
-    padding-right: 10%;
-    padding-left: 10%;
+.slideshow h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  color: white;
 }
 
-.whereTo .text{
-    position: relative;
-    width: 40%;
-    height: 685px;
-    display: inline-block;
-    align-items: center;
-    padding: 150px, 100px;
-    float: right;
-    justify-content: right;
+.whereTo {
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  height: auto;
+
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
-.whereToImage{
-    padding-top: 0;
-    padding-left: 0;
-    margin-top: 0;
-    width: 60%;
-    display: inline-block;
-    float: left;
+.whereTo .text {
+  position: relative;
+  width: 40%;
+  height: 685px;
+  display: inline-block;
+  align-items: center;
+  padding: 150px, 100px;
+  float: right;
+  justify-content: right;
 }
 
-.whereToImage img{
-    padding-top: 10%;
-    margin:0;
-    width: 110%;
+.whereToImage {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 0;
+  width: 60%;
+  display: inline-block;
+  float: left;
 }
 
-.whereTo h1{
-    font-size: 55px;
-    line-height: 66px;
-    text-align: right;
-    margin-top: 200px;
+.whereToImage img {
+  padding-top: 10%;
+  margin: 0;
+  width: 110%;
 }
 
-.whereTo h2{
-    font-size: 30px;
-    text-align: right;
-    margin-top: 75px;
+.whereTo h1 {
+  font-size: 55px;
+  line-height: 66px;
+  text-align: right;
+  margin-top: 200px;
 }
 
-.whereTo p{
-    font-size: 20px;
-    text-align: right;
-    margin-top: 20px;
+.whereTo h2 {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 75px;
 }
 
-.learnMoreBox p{
-    font-family: 'Work Sans';
-    margin: 0px;
-    clear: both;
-    color: #FE9C00;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.whereTo p {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 20px;
 }
 
-.learnMoreBox{
-    border: #FE9C00 solid 1px;
-    border-radius: 5px;
-    justify-content: center;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 100px;
-    margin-left: 50%;
-    width: 40%;
-    align-items: right;
+.learnMoreBox p {
+  font-family: "Work Sans";
+  margin: 0px;
+  clear: both;
+  color: #fe9c00;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.learnMoreBox {
+  border: #fe9c00 solid 1px;
+  border-radius: 5px;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 100px;
+  margin-left: 50%;
+  width: 40%;
+  align-items: right;
 }
