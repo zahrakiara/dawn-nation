@@ -1,567 +1,559 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration: none;
 }
 
-body {
-  /* remove background-color later*/
-  margin: 0px;
-  align-items: center;
-  background: gray;
-  box-sizing: border-box;
+body{
+    /* remove background-color later*/
+    margin:0px;
+    align-items: center;
+    background: gray;
+    box-sizing: border-box;
 }
 
-.greyText {
-  color: #4f4f4f;
+.greyText{
+    color:#4F4F4F;
 }
 
-.greyText h1 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-style: normal;
+.greyText h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
 }
 
-.greyText h2 {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-style: normal;
+.greyText h2{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-style: normal;
 }
 
-.greyText p {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: normal;
+.greyText p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
 }
 
-.nav-container {
-  width: 100%;
-  height: 140px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+.nav-container{
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-nav {
-  float: right;
-  align-items: right;
-  color: white;
+nav{
+    float:right;
+    align-items: right;
+    color: white;
 }
 
-.nav-container .logo {
-  width: 40%;
+.nav-container .logo{
+    width: 40%
 }
-.nav-container .logo img {
-  float: left;
-  height: 120px;
-  margin-left: 27.5px;
+.nav-container .logo img{
+    float:left;
+    height: 120px;
+    margin-left: 27.5px;
 
-  /* rotates the image*/
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-nav ul {
-  display: inline;
-  float: right;
+    /* rotates the image*/
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-nav ul li {
-  top: 102px;
-  display: inline-block;
-  padding: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 38px;
-  text-align: right;
-  text-decoration: none;
+nav ul{
+    display: inline;
+    float: right;
 }
 
-nav ul li a {
-  color: white;
+nav ul li{
+    top: 102px;
+    display: inline-block;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: right;
+    text-decoration: none;  
 }
 
-nav ul li a:hover {
-  color: orange;
+nav ul li a{
+    color: white
 }
 
-#donate-button {
-  background-color: #fe9c00;
-  color: black;
-  font-size: 18px;
-  line-height: 28px;
-  border-radius: 5px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-left: 27.5px;
-  margin-right: 0 auto;
+nav ul li a:hover{
+    color:orange;
 }
 
-#donate-button a {
-  color: black;
+#donate-button{
+    background-color: #FE9C00;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 27.5px;
+    margin-right: 0 auto;
 }
 
-#donate-button:hover {
-  background-color: #ffce7e;
+#donate-button a{
+    color: black;
 }
 
-.slideshow {
-  z-index: 1;
-  width: 100%;
-  height: 650px;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px;
-  overflow: hidden;
-  display: flex;
-  top: 0px;
+#donate-button:hover{
+    background-color:#ffce7e;
 }
 
-.slideshow h1 {
-  font-size: 54px;
-  font-family: "Montserrat";
-  font-weight: bolder;
-  color: white;
+.slideshow{
+    z-index: 1;
+    width: 100%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    min-height:600px;
+    overflow: hidden;
+    display:flex;
+    top: 0px;
 }
 
-.slideshow p {
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: white;
+.slideshow h1{
+    font-size: 54px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
 }
 
-.slideshow h3 {
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
-  color: white;
+.slideshow p{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+}
+
+.slideshow h3{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: white;
 }
 
 /* placeholder of slides */
 .mySlides {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  display: inline-block; /* Make the width of box same as image */
+    position: relative;
+    max-width: 100%; 
+    overflow: hidden;
+    display: inline-block; /* Make the width of box same as image */
 }
 
-.slideshow img {
-  position: relative;
-  width: initial;
-  vertical-align: middle;
+.slideshow img{
+    position: relative;
+    width: initial;
+    vertical-align:middle;
 }
 
-.sliderText {
-  position: absolute;
-  text-align: center;
-  z-index: 998;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  padding-left: 20px;
+.sliderText{
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
 
-  top: 35%; /* Adjust this value to move the positioned div up and down */
-  width: 70%; /* Set the width of the positioned div */
+    top: 35%; /* Adjust this value to move the positioned div up and down */
+    width: 70%; /* Set the width of the positioned div */
 }
 
-.callToAction {
-  position: absolute;
-  text-align: center;
-  z-index: 998;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  padding-left: 20px;
-  top: 67%; /* Adjust this value to move the positioned div up and down */
-  width: 100%; /* Set the width of the positioned div */
+
+.callToAction{
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    top: 67%; /* Adjust this value to move the positioned div up and down */
+    width: 100%; /* Set the width of the positioned div */
 }
 
-.callToAction li {
-  position: absolute;
-  padding: 30px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 38px;
-  text-align: center;
-  text-decoration: none;
-  list-style-type: none;
+.callToAction li{
+    position: absolute;
+    padding: 30px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none; 
+    list-style-type: none;
 }
 
-#learn-more {
-  border: 2px solid #fe9c00;
-  color: black;
-  border-radius: 5px;
-  justify-content: center;
-  padding-top: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 8px;
-  line-height: 26px;
-  margin-left: 29.5%;
-  margin-right: 0%;
-  width: 15%;
+#learn-more{
+    border: 2px solid #FE9C00;
+    color: black;
+    border-radius: 5px;
+    justify-content: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    line-height: 26px;
+    margin-left: 29.5%;
+    margin-right: 0%;
+    width: 15%;
 }
 
-#learn-more a {
-  color: #fe9c00;
+#learn-more a{
+    color: #FE9C00;
 }
 
 #learn-more:hover {
-  color: white;
-  background-color: #ffce7e;
+    color: white;
+    background-color:#ffce7e;
 }
 
-#call {
-  background-color: #fe9c00;
-  color: black;
-  border-radius: 5px;
-  justify-content: center;
-  padding-top: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 8px;
-  line-height: 28px;
-  margin-left: 50%;
-  width: 15%;
+#call{
+    background-color: #FE9C00;
+    color: black;
+    border-radius: 5px;
+    justify-content: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    line-height: 28px;
+    margin-left: 50%;
+    width: 15%;
 }
 
-#call a {
-  color: black;
+#call a{
+    color: black;
 }
 
-#call:hover {
-  background-color: #ffce7e;
+#call:hover{
+    background-color:#ffce7e;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
-  position: absolute;
-  text-align: center;
-  z-index: 998;
-  margin: 0 auto;
-  cursor: pointer;
-  margin-top: -22px;
-  top: 20%;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  /* user-select: none; */
-}
+.prev, .next {
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: -22px;
+    top: 20%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "prev button" to the right */
-.prev {
-  left: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  /* Position the "prev button" to the right */
+  .prev {
+    left: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  z-index: 996;
-  top: 50%;
-  height: 4px;
-  width: 40px;
-  margin: 0 2px;
-  background-color: #c4c4c4;
-  border-radius: 3px 3px 3px 3px;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    z-index: 996;
+    top: 50%;
+    height: 4px;
+    width: 40px;
+    margin: 0 2px;
+    background-color:  #C4C4C4;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.progress {
-  position: absolute;
-  text-align: center;
-  z-index: 996;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  margin-top: -22px;
-  height: cover;
-  top: 45%; /* Adjust this value to move the positioned div up and down */
+.progress{
+    position: absolute;
+    text-align: center;
+    z-index: 996;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: -22px;
+    height: cover;
+    top: 45%; /* Adjust this value to move the positioned div up and down */
 }
 
-.active,
-.dot:hover {
-  background-color: #fe9c00;
-}
+.active, .dot:hover {
+    background-color: #FE9C00;
+  }
 
-/* Fading animation */
+  /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  
+/* next section */
+
+.whereTo{
+    z-index: 1;
+    background-color: white;
+    width: 80%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    min-height:750px;
+    overflow: hidden;
+    display:flex;
+    padding-bottom: 0px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.whereTo .text{
+    float: right;
+    width: 40%;
+    height: 685px;
+    display: inline-block;
+    align-items: center;
+    padding: 150px, 100px;
+    justify-content: right;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.whereToImage{
+    
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    width: 60%;
+    display: inline-block;
 }
+
+.whereToImage img{
+    padding-top: 10%;
+    margin:0;
+    width: 110%;
+}
+
+.whereTo h1{
+    font-size: 55px;
+    line-height: 66px;
+    text-align: right;
+    margin-top: 200px;
+}
+
+.whereTo h2{
+    font-size: 30px;
+    text-align: right;
+    margin-top: 75px;
+}
+
+.whereTo p{
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.learnMoreBox p{
+    font-family: 'Work Sans';
+    margin: 0px;
+    clear: both;
+    color: #FE9C00;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.learnMoreBox{
+    border: #FE9C00 solid 1px;
+    border-radius: 5px;
+    justify-content: center;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-left: 50%;
+    width: 40%;
+    align-items: right;
+}
+
 
 /* next section */
 
-.whereTo {
-  z-index: 1;
-  background-color: white;
-  width: 80%;
-  height: 800px;
-  align-items: center;
-  justify-content: center;
-  min-height: 750px;
-  overflow: hidden;
-  display: flex;
-  padding-bottom: 0px;
-  padding-right: 10%;
-  padding-left: 10%;
+.howtohelp{
+    display: block;
+    height: 550px;
+    background-color: #4d4d4d;
+    width: 80%;
+    align-items: center;
+    overflow: hidden;
+    display:flex;
+    padding-bottom: 0px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
-.whereTo .text {
-  float: right;
-  width: 40%;
-  height: 685px;
-  display: inline-block;
-  align-items: center;
-  padding: 150px, 100px;
-  justify-content: right;
+.howtohelptext{
+    text-align: padding-left;
 }
 
-.whereToImage {
-  padding-top: 0;
-  padding-left: 0;
-  margin-top: 0;
-  width: 60%;
-  display: inline-block;
+.whitefont{
+    color:white;
+    padding-top: 20px;
+    padding-bottom:10px;
 }
 
-.whereToImage img {
-  padding-top: 10%;
-  margin: 0;
-  width: 110%;
+.whitefont h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 54px;
 }
 
-.whereTo h1 {
-  font-size: 55px;
-  line-height: 66px;
-  text-align: right;
-  margin-top: 200px;
+.whitefont h2{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-style: normal;
 }
 
-.whereTo h2 {
-  font-size: 30px;
-  text-align: right;
-  margin-top: 75px;
+.whitefont p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
 }
 
-.whereTo p {
-  font-size: 20px;
-  text-align: right;
-  margin-top: 20px;
+p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
 }
 
-.learnMoreBox p {
-  font-family: "Work Sans";
-  margin: 0px;
-  clear: both;
-  color: #fe9c00;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.learnMoreBox {
-  border: #fe9c00 solid 1px;
-  border-radius: 5px;
-  justify-content: center;
-  padding-top: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 100px;
-  margin-left: 50%;
-  width: 40%;
-  align-items: right;
-}
-
-/* next section */
-
-.howtohelp {
-  display: block;
-  height: 550px;
-  background-color: #4d4d4d;
-  width: 80%;
-  align-items: center;
-  overflow: hidden;
-  display: flex;
-  padding-bottom: 0px;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-.howtohelptext {
-  text-align: padding-left;
-}
-
-.whitefont {
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.whitefont h1 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 54px;
-}
-
-.whitefont h2 {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-style: normal;
-}
-
-.whitefont p {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-}
-
-p {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.hline {
-  position: relative;
-  top: 185%;
-  cursor: pointer;
-  z-index: 996;
-  height: 4px;
-  width: 40px;
-  margin: 0 2px;
-  border-radius: 3px 3px 3px 3px;
-  display: inline-block;
-  background-color: #fe9c00;
+.hline{
+    position: relative;
+    top:185%;
+    cursor: pointer;
+    z-index: 996;
+    height: 4px;
+    width: 40px;
+    margin: 0 2px;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    background-color: #FE9C00;
 }
 
 .row {
-  display: flex;
-  padding-left: 50px;
-  max-height: 270px;
-  max-block-size: 270px;
-}
-
+    display: flex;
+    padding-left: 50px;
+    max-height: 270px;
+    max-block-size: 270px;
+  }
+  
 .column {
-  flex: 33.33%;
-  padding: 35px;
-  border: 20px;
-  text-align: center;
+    flex: 33.33%;
+    padding: 35px;
+    border: 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
+    .column {
+      width: 100%;
+    }
+  }  
 
 /* next section */
 
-.headersection {
-  float: inline-start;
-  columns: #4d4d4d;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  width: 100%;
+.headersection{
+    float: inline-start;
+    columns: #4d4d4d;;
+    padding-top: 20px;
+    padding-bottom:20px;
+    text-align: center;
+    width: 100%;
 }
 
-.headersection h1 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 54px;
+.headersection h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 54px;
 }
 
-.headersection h2 {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-style: normal;
+.headersection h2{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-style: normal;
 }
 
-.headersection p {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+.headersection p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
 }
 
-.rowcard {
-  display: block;
-  height: 800px;
-  background-color: #e5e5e5;
-  width: 80%;
-  align-items: center;
-  overflow: hidden;
-  display: flex;
-  padding-bottom: 0px;
-  padding-right: 10%;
-  padding-left: 10%;
+.rowcard{
+    display: block;
+    height: 800px;
+    background-color: #E5E5E5;
+    width: 80%;
+    align-items: center;
+    overflow: hidden;
+    display:flex;
+    padding-bottom: 0px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 /* Float four columns side by side */
 .columncard {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
 
-/* Remove extra left and right margins, due to padding in columns */
-.rowcard {
-  margin: 0 -5px;
-}
+  /* Remove extra left and right margins, due to padding in columns */
+.rowcard {margin: 0 -5px;}
 
 /* Clear floats after the columns */
 .rowcard:after {
@@ -588,30 +580,66 @@ p {
   }
 }
 
+/*Contact Information*/
+.contact{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    background-color: #4d4d4d;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.colContact {
+    flex: 33.33%;
+    padding-right: 30px;
+    border: 20px;
+    text-align: center;
+    
+}
+
+.colContact img{
+    float: left;
+}
+
+.linkColumn{
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.linkColumn p{
+    font-family: 'Work Sans';
+    margin: 0px;
+    clear: both;
+    color: white;
+    padding-bottom: 1px;
+}
+
+
+
 /* FOOTER */
 
-footer {
-  display: block;
-  z-index: 1;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  color: white;
-  text-align: center;
-  background-color: #fe9c00;
+footer{
+    display: block-inline;
+    text-align: center;
+    width: 100%;
+    background-color: #FE9C00;
+    align-items: center;
+    justify-content: center;
 }
 
-/* #copyright { 
-  background-color: white;
-  width: 100%;
-  text-align: center;
+.copyright { 
+    display: block;
+    height: auto;
+    background-color: #FE9C00;
+    width: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-#textfoot { 
-  color:white;
-  background-color:#FE9C00;
-position:absolute;
-text-align:center;
-font-size:Symbol(figma.mixed)px;
-letter-spacing:0;
-} */
