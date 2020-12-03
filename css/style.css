@@ -501,7 +501,7 @@ p{
     }
   }  
 
-/* next section */
+/* Partner Organizations */
 
 .headersection{
     float: inline-start;
@@ -547,12 +547,13 @@ p{
 
 /* Float four columns side by side */
 .columncard {
+    display: block;
     float: left;
     width: 50%;
     padding: 0 10px;
   }
 
-  /* Remove extra left and right margins, due to padding in columns */
+/* Remove extra left and right margins, due to padding in columns */
 .rowcard {margin: 0 -5px;}
 
 /* Clear floats after the columns */
@@ -580,6 +581,50 @@ p{
   }
 }
 
+/*Testimonials*/
+
+.testimonials{
+    align-items: center;
+
+    height: 800px;
+    background: white;
+}
+
+.cardgroup { 
+    display: block;
+    align-items: baseline;
+}
+
+.cardtestimonial { 
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background: lawngreen;
+    width: 60%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.customer { 
+}
+
+.name { 
+
+}
+
+.cardpic{
+    width: 50%;
+    float: right;
+}
+
+.ambassador{
+    height:500px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+
 /*Contact Information*/
 .contact{
     display: flex;
@@ -599,29 +644,84 @@ p{
     flex: 33.33%;
     padding-right: 30px;
     border: 20px;
-    text-align: center;
-    
+    text-align: left;
+}
+
+.colContact h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .colContact img{
     float: left;
 }
-
+ 
 .linkColumn{
     text-align: left;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .linkColumn p{
     font-family: 'Work Sans';
+    font-size: 15px;
     margin: 0px;
     clear: both;
     color: white;
-    padding-bottom: 1px;
+    display: flex;
 }
 
+.rowicon{
+    display: flex;
+    align-items: center;
+}
 
+.rowicon p{
+    font-family: 'Work Sans';
+    font-size: 15px;
+    margin: 0px;
+    clear: both;
+    color: white;
+    display: flex;
+}
+
+.icon{
+    padding: 10px 25px 25px 0px;
+}
+
+.icon_low{
+    padding: 10px 25px 0px 0px;
+}
+
+.logo_footer{
+    display:block;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.logo_text{
+    display:block;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.socmed {
+    display: flex;
+    width: 90%;
+}
+  
+.smColumn {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.sm{
+    width: 80%;
+}
 
 /* FOOTER */
 
