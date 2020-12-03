@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn Nation</title>
+        <link rel="shortcut icon" type="image/jpg" href="src/images/favicon.png"/>
+        <link rel="stylesheet" href="css/style_about_us.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav bar with logo-->
+    <div id="navcontainer" class="sticky">
+        <div class="logo">
+            <a href="landing-page.html"><img src="src/images/logo.png" alt="DawnNationLogo"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="">ORGS</a></li>
+                <li id="donate-button"><a href="">DONATE</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header">
+        <h1>About Us</h1>
+    </div>
+
+    <!--Description-->
+    <div class="decription">
+        <div class="box1">
+            <img src="src/images/box1.png" alt="Box1">
+        </div>
+        <div class="greyText">
+            <h1><strong>WHERE DO I DONATE?</strong></h1>
+            <h2>We're glad you asked!</h2>
+            <p>Dawn Nation exists to connect you with different donations drives all across the country!</p>
+        </div>
+    </div>
+
+    <!--slideshow placeholder-->
+    <div class="slideshow">
+        <!-- slide1 -->
+        <div class="mySlides fade">
+            <div class="cardtestimonial">
+                <div class="cardtext">
+                    <p>Unlike sa ibang donation drive apps 
+                    </br>na nakita ko, pinakada-best ang 
+                    </br>Dawn Nation. Mas okey pa ‘to kasi 
+                    </br>nandito na lahat.
+                    </br>
+                    </br>Ito ang Champion tulad ko!
+                    </p>
+                    <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h1 class="name">Manny Pacquiao</h1>
+                    <p class="customer">DAWN NATION CUSTOMER</p>
+                </div>
+            </div>
+            <div class="cardpic"> 
+                <img class="ambassador" src="src/images/pacquiao.png">
+            </div>
+        </div>
+        <!-- slide2 -->
+        <div class="mySlides fade" id="s1">
+            <div class="cardtestimonial">
+                <div class="cardtext">
+                    <p>Unlike sa ibang donation drive apps 
+                    </br>na nakita ko, pinakada-best ang 
+                    </br>Dawn Nation. Mas okey pa ‘to kasi 
+                    </br>nandito na lahat.
+                    </br>
+                    </br>Ito ang Champion tulad ko!
+                    </p>
+                    <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <h1 class="name">Manny Pacquiao</h1>
+                    <p class="customer">DAWN NATION CUSTOMER</p>
+                </div>
+            </div>
+            <div class="cardpic"> 
+                <img class="ambassador" src="src/images/chan.png">
+            </div>
+        </div>
+        <!-- slide3 -->
+        <div class="mySlides fade" id="s1">
+            <div class="sliderText">
+                <h1 class="greyText">BE PART OF THE</br>DAWN NATION TEAM</h1>
+                <p class="grayText">This platform could sure use your help!</br>Contact us for more information.</p>
+            </div>
+            <div class="callToAction">
+                <ul class="callToAction">
+                    <li id="learn-more"><a href="">LEARN MORE</a></li>
+                    <li id="call"><a href="">JOIN US</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="progress" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!--Contact Information-->
+
+    <div class="contact">
+        <div class="colContact">
+            <div class="linkColumn">
+                <img class="logo_text" src="src/images/DAWN NATION.png" alt="Dawn Nation Text Logo">
+            </div>
+            <div class="linkColumn">
+                <a href="">
+                    <p>ABOUT US</p>
+                </a></br>
+                <a href="">
+                    <p>PARTNER ORGS</p>
+                </a></br>
+                <a href="">
+                    <p>CONTACT US</p>
+                </a></br>
+                <a href="">
+                    <p>DONATE</p>
+                </a>
+            </div>
+        </div>
+        <div class="colContact">
+            <span class="hline"></span>
+            <h1><strong>CONTACT US</strong></h1>
+            <div class="icon_group">
+                <div class="rowicon">
+                    <img class="icon" src="src/images/circle_location.png" alt="pin icon" style="width: 15%;">
+                    <p>Alumni Engineers Centennial Hall</br>
+                        P. Velasquez St., University of the</br>
+                        Philippines Diliman, Quezon City</p>
+                </div>
+                <div class="rowicon">
+                    <img class="icon" src="src/images/circle_phone.png" alt="phone icon" style="width: 15%;">
+                    <p>0917 123 9091</p>
+                </div>
+                <div class="rowicon">
+                    <img class="icon_low" src="src/images/circle_email.png" alt="email icon" style="width: 15%;">
+                    <p>dawnnation@email.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="colContact">
+            <div class="socmed">
+                <img class="logo_footer" src="src/images/logo_footer.png" alt="Dawn Nation Text Logo">
+            </div>
+            <div class="socmed">
+                <div class="smColumn">
+                    <img class="sm" src="src/images/sm-fb.png" alt="Facebook">
+                </div>
+                <div class="smColumn">
+                    <img class="sm" src="src/images/sm-ig.png" alt="Instagram">
+                </div>
+                <div class="smColumn">
+                    <img class="sm" src="src/images/sm-twt.png" alt="Twitter">
+                </div>
+                <div class="smColumn">
+                    <img class="sm" src="src/images/sm-yt.png" alt="Youtube">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Copyright Information-->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Dawn Nation 2020. All Rights Reserved.</br>
+                Dawn Nation is a non-profit crowdsourcing web platform to fast track your donation initiatives.</p>
+        </div>
+    </footer>
+    <script src="app_about_us.js"></script>
+</body>
+</html>       
+       
+       

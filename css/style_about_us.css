@@ -1,0 +1,553 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    /* remove background-color later*/
+    margin: 0px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header{
+    display: block;
+    background-position: center top;
+    background-image: url(/src/images/slide1.png);
+    max-width: 100%;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.header h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    vertical-align: middle;
+    top: 60%;
+    position: relative;
+}
+
+.greyText{
+    color:#4F4F4F;
+}
+
+.greyText h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.greyText h2{
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.greyText p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+}
+
+#navcontainer{
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(77, 77, 77, 0.7);
+    
+}
+
+nav{
+    float:right;
+    align-items: right;
+    color: white;
+}
+
+#navcontainer .logo{
+    width: 40%
+}
+
+#navcontainer .logo img{
+    float:left;
+    height: 120px;
+    margin-left: 27.5px;
+
+    /* rotates the image*/
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+nav ul{
+    display: inline;
+    float: right;
+}
+
+nav ul li{
+    top: 102px;
+    display: inline-block;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: right;
+    text-decoration: none;  
+}
+
+nav ul li a{
+    color: white
+}
+
+nav ul li a:hover{
+    color:orange;
+}
+
+#donate-button{
+    background-color: #FE9C00;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 27.5px;
+    margin-right: 0 auto;
+}
+
+#donate-button a{
+    color: black;
+}
+
+#donate-button:hover{
+    background-color:#ffce7e;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .description {
+    padding-top: 50px;
+}
+
+/*MAIN CONTENT*/
+
+.description{ 
+    background-color: white;
+    width: 80%;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    min-height:750px;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0px;
+}
+
+.description .text{
+    position: absolute;
+    right : 0px;
+    top: 0px;
+    text-align: center;
+}
+
+.box1{
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    width: 50%;
+    text-align: right;
+}
+
+.box1 img{
+    padding-top: 50px;
+    padding-right: 50px;
+    margin:0;
+    width: 110%;
+    align-items: left;
+}
+
+.description h1{
+    font-size: 55px;
+    line-height: 66px;
+    text-align: right;
+    margin-top: 200px;
+}
+
+.description h2{
+    font-size: 30px;
+    text-align: right;
+    margin-top: 75px;
+}
+
+.description p{
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/*Testimonials*/
+
+.slideshow{
+    display: block;
+    align-items: center;
+    height: 800px;
+    background: white;
+}
+
+.mySlides { 
+    display: block;
+    align-items: baseline;
+    position: relative;
+    align-items: center;
+    height: 800px;
+    background: white;
+}
+
+.cardtestimonial { 
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background:#c2c2c2;
+    width: 60%;
+    height: 400px;
+    border-radius: 10px;
+    z-index:2;
+}
+
+.cardtext {
+    padding-left: 80px;
+}
+
+.customer { 
+    font-family: Work Sans;
+
+}
+
+.name { 
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #FE9C00;
+}
+
+.stars{
+    font-family: Montserrat;
+    color: #FE9C00;
+}
+
+.cardpic{
+    width: 50%;
+}
+
+.ambassador{
+    z-index: 500;
+    display: block;
+    height:500px;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+/*.slideshow{
+    z-index: 1;
+    width: 60%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    min-height:600px;
+    overflow: hidden;
+    display:flex;
+    top: 0px;
+}*/
+
+.slideshow{
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    min-height:600px;
+    overflow: hidden;
+    height:500px;
+}
+
+.slideshow h1{
+    font-size: 54px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
+}
+
+.slideshow p{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+}
+
+.slideshow h3{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: white;
+}
+
+/* placeholder of slides */
+.mySlides {
+    height:200px;
+    position: relative;
+    max-width: 100%; 
+    overflow: hidden;
+    display: inline-block; /* Make the width of box same as image */
+}
+
+.slideshow img{
+    position: relative;
+    width: initial;
+    vertical-align:middle;
+}
+
+.sliderText{
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    top: 35%; /* Adjust this value to move the positioned div up and down */
+    width: 70%; /* Set the width of the positioned div */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    text-align: center;
+    z-index: 998;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: -22px;
+    top: 47%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+    left: 0;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    z-index: 996;
+    top: 50%;
+    height: 4px;
+    width: 40px;
+    margin: 0 2px;
+    background-color:  #C4C4C4;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.progress{
+    position: absolute;
+    text-align: center;
+    z-index: 996;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: -22px;
+    height: cover;
+    top: 80%; /* Adjust this value to move the positioned div up and down */
+}
+
+.active, .dot:hover {
+    background-color: #FE9C00;
+}
+
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/* FOOTER */
+
+/*Contact Information*/
+.contact{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    background-color: #4d4d4d;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.colContact {
+    flex: 33.33%;
+    padding-right: 30px;
+    border: 20px;
+    text-align: left;
+}
+
+.colContact h1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.colContact img{
+    float: left;
+}
+ 
+.linkColumn{
+    text-align: left;
+    padding-top: 30px;
+}
+
+.linkColumn p{
+    font-family: 'Work Sans';
+    font-size: 15px;
+    margin: 0px;
+    clear: both;
+    color: white;
+    display: flex;
+}
+
+.rowicon{
+    display: flex;
+    align-items: center;
+}
+
+.rowicon p{
+    font-family: 'Work Sans';
+    font-size: 15px;
+    margin: 0px;
+    clear: both;
+    color: white;
+    display: flex;
+}
+
+.icon{
+    padding: 10px 25px 25px 0px;
+}
+
+.icon_low{
+    padding: 10px 25px 0px 0px;
+}
+
+.logo_footer{
+    display:block;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.logo_text{
+    display:block;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.socmed {
+    display: flex;
+    width: 90%;
+}
+  
+.smColumn {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.sm{
+    width: 80%;
+}
+
+footer{
+    display: block-inline;
+    text-align: center;
+    width: 100%;
+    background-color: #FE9C00;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright { 
+    display: block;
+    height: auto;
+    background-color: #FE9C00;
+    width: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+    color: #4d4d4d;
+}
